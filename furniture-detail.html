@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniture Detail | Shop the Scene</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">Shop the Scene</div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="furniture.html">Furniture</a>
+      <a href="decors.html">Decor</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="detail-page">
+    <div class="detail-layout">
+
+      <div class="detail-image-box" id="detailImageBox">
+        <img id="roomImage" src="" alt="Room Image">
+
+        <!-- Bedroom hotspots -->
+        <button class="hotspot room-bedroom" style="top: 35%; left: 40%;" onclick="showProduct('bed')">+</button>
+        <button class="hotspot room-bedroom" style="top: 30%; left: 75%;" onclick="showProduct('cupboard')">+</button>
+        <button class="hotspot room-bedroom" style="top: 75%; left: 30%;" onclick="showProduct('sofa')">+</button>
+
+        <!-- Living hotspots -->
+        <button class="hotspot room-living" style="top: 70%; left: 42%;" onclick="showProduct('sofa')">+</button>
+        <button class="hotspot room-living" style="top: 55%; left: 63%;" onclick="showProduct('coffeeTable')">+</button>
+        <button class="hotspot room-living" style="top: 20%; left: 80%;" onclick="showProduct('accentChair')">+</button>
+        <button class="hotspot room-living" style="top: 60%; left: 17%;" onclick="showProduct('wardrobe')">+</button>
+        <button class="hotspot room-living" style="top: 30%; left: 50%;" onclick="showProduct('bed')">+</button>
+
+        <!-- Study hotspots -->
+        <button class="hotspot room-study" style="top: 50%; left: 48%;" onclick="showProduct('sofa')">+</button>
+        <button class="hotspot room-study" style="top: 60%; left: 15%;" onclick="showProduct('stool')">+</button>
+
+        <!-- Cozy hotspots -->
+         <button class="hotspot room-cozy" style="top: 50%; left: 38%;" onclick="showProduct('bed')">+</button>
+         <button class="hotspot room-cozy" style="top: 60%; left: 78%;" onclick="showProduct('table')">+</button>
+        <button class="hotspot room-cozy" style="top: 60%; left: 67%;" onclick="showProduct('chair')">+</button>
+
+        <!-- Designer Cupboard hotspots -->
+        <button class="hotspot room-designercupboard" style="top: 50%; left: 48%;" onclick="showProduct('cupboard')">+</button>
+         
+        <!-- Luxury Lounge hotspots -->
+        <button class="hotspot room-classy" style="top: 60%; left: 38%;" onclick="showProduct('sofa')">+</button>
+        <button class="hotspot room-classy" style="top: 50%; left: 65%;" onclick="showProduct('table')">+</button>
+
+        <!-- Bussiness Room hotspots -->
+        <button class="hotspot room-buss" style="top: 50%; left: 48%;" onclick="showProduct('table')">+</button>
+         <button class="hotspot room-buss" style="top: 50%; left: 15%;" onclick="showProduct('sofa')">+</button>
+         <button class="hotspot room-buss" style="top: 40%; left: 70%;" onclick="showProduct('chair')">+</button>
+         <button class="hotspot room-buss" style="top: 70%; left: 20%;" onclick="showProduct('stool')">+</button>
+
+         <!-- Cute Cupboard Room hotspots -->
+        <button class="hotspot room-cutecup" style="top: 50%; left: 48%;" onclick="showProduct('shelf')">+</button>
+      </div>
+
+      <div class="detail-info-panel">
+        <div id="productInfo">
+          <h2>Click a + button</h2>
+          <p>See the furniture details, price, and buying options here.</p>
+        </div>
+
+        <div class="whole-look-box">
+          <h3>Buy the Whole Look</h3>
+          <p>Buy all the furniture in this room together and get 10% off.</p>
+          <button class="whole-look-btn" onclick="buyWholeLook()">Buy the Whole Look</button>
+          <div id="wholeLookResult" class="whole-look-result"></div>
+        </div>
+
+         <div class="room-description-box">
+    <h3>Room Description</h3>
+    <p id="roomDescription">
+      This room combines comfort and elegance with carefully selected furniture pieces
+      that create a warm, stylish, and functional interior.
+    </p>
+  </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>© 2026 Shop the Scene. All rights reserved.</p>
+  </footer>
+
+  <script src="furniture-detail.js"></script>
+</body>
+</html>
